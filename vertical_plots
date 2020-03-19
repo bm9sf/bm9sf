@@ -1,0 +1,3 @@
+names()<-c("x","y","z")
+library(ggplot2)
+ggplot(data=crop,mapping=aes(x=crop$z))+geom_freqpoly(bins=400)+coord_flip()
