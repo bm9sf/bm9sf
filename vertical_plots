@@ -1,3 +1,8 @@
+file.choose()
+CROP<-read.csv
+
 names()<-c("x","y","z")
+CROP_filter<-crop5.1[crop5.1$z>0,]
+
 library(ggplot2)
-ggplot(data=crop,mapping=aes(x=crop$z))+geom_freqpoly(bins=400)+coord_flip()
+ggplot(data=CROP_filter,mapping=aes(x=CROP_filter$z))+geom_freqpoly(bins=400)+coord_flip()
