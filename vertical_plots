@@ -9,4 +9,5 @@ ggplot(data=CROP_filter,mapping=aes(x=CROP_filter$z))+geom_freqpoly(bins=400)+co
 
 OR
 
-ggplot(data=CROP_filter,mapping=aes(x=CROP_filter$z))+geom_freqpoly(bins=400)+coord_flip()+scale_x_continuous(name="height",breaks=c(0,10,20,30), limits=c(0,35))
+ggplot(data=CROP_filter,mapping=aes(x=CROP_filter$z))+geom_freqpoly(bins=400)+coord_flip()+
+scale_x_continuous(name="height",breaks=c(0,10,20,30), limits=c(0,35))
