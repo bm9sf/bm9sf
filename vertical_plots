@@ -11,3 +11,7 @@ OR
 
 ggplot(data=CROP_filter,mapping=aes(x=CROP_filter$z))+geom_freqpoly(bins=400)+coord_flip()+
 scale_x_continuous(name="height",breaks=c(0,10,20,30), limits=c(0,35))+theme(plot.title = element_text(hjust = 0.5))
+
+ggplot(data=crop7.4_norm,mapping=aes(x=crop7.4_norm$Znorm))+geom_freqpoly(bins=400)+coord_flip()+
+scale_x_continuous(name="height",breaks=c(0,10,20,30), limits=c(0,35))+labs(title="Jul - plot 4")+
+theme(plot.title = element_text(hjust = 0.5))
