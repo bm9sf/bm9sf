@@ -29,6 +29,6 @@ theme(plot.title = element_text(hjust = 0.5))
 
 ggplot(data=drone1,mapping=aes(x=z, color=Month))+geom_freqpoly(bins=39)+coord_flip()+ 
 theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.line = element_line(colour = "black"))+ 
-scale_x_continuous(name="Height (m)",breaks=c(0,10,20,30,40), limits=c(0,40))+scale_y_continuous(breaks=c(0,100000,200000,300000),limits=c(0,300000))+ 
+scale_x_continuous(name="Height (m)",breaks=c(0,10,20,30,40), limits=c(2,40))+scale_y_continuous(breaks=c(0,100000,200000,300000),limits=c(0,300000))+ 
 xlab( expression(Height ~ (m))) +ylab( expression(Points))+labs(title="Drone - Plot 1", color="Month")+ theme(plot.title = element_text(hjust = 0.5))+
 scale_color_hue(labels=c("Mar","May","Jul","Oct"))
