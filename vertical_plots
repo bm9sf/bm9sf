@@ -20,3 +20,8 @@ ggplot(data=TLS3.1,mapping=aes(x=z_bin, y=dxw))+geom_line()+coord_flip()+ theme(
           panel.background = element_blank(), axis.line = element_line(colour = "black"))+
 scale_x_continuous(breaks=c(0,10,20,30,40), limits=c(0,40))+ xlab( expression(Height ~ (m))) +ylab( expression(PAVD ~ (m^{2} ~ m^{-2})))+labs(title="Mar - plot 1")+
 theme(plot.title = element_text(hjust = 0.5))
+
+
+> ggplot(data=TLSm_1,mapping=aes(x=z, y=value, color=variable))+geom_line()+coord_flip()+ theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),panel.background = element_blank(), axis.line = element_line(colour = "black"))+
++     scale_x_continuous(breaks=c(0,10,20,30,40), limits=c(0,40))+ xlab( expression(Height ~ (m))) +ylab( expression(PAVD ~ (m^{2} ~ m^{-2})))+labs(title="TLS - Plot 1", color="Month")+
++     theme(plot.title = element_text(hjust = 0.5))+scale_color_hue(labels=c("Mar","May","Jul","Oct"))
